@@ -143,6 +143,13 @@ body {
   }
 }
 
+@media (max-width: 412px) {
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 .icon {
   width: 60px;
   height: 60px;
@@ -182,3 +189,21 @@ body {
   justify-content: space-evenly;
 }
 
+.stack-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: stretch;
+  color: #1f363d;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+div > h3 {
+  margin-bottom: 40px;
+}
+
+.working-knowledge {
+  border-left: 2px solid;
+}
