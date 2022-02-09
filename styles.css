@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 @media (max-width: 75em) {
   html {
@@ -38,7 +39,8 @@ body {
   color: #777;
   background-color: #f7f7f7;
   box-sizing: border-box;
-  padding: 0.5rem;
+  margin: 0;
+  overflow-x: scroll;
 }
 
 @keyframes leftIn {
@@ -89,8 +91,9 @@ body {
   background-image: url(./assets/wQeh1Tt.gif);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  background-position-y: -60px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
 }
 @media (max-width: 56.25em) {
   .header {
@@ -143,16 +146,16 @@ body {
   }
 }
 
-@media (max-width: 412px) {
-  .icon {
-    width: 35px;
-    height: 35px;
-  }
-}
-
 .icon {
   width: 60px;
   height: 60px;
+}
+
+@media (max-width: 414px) {
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .tech-stack {
@@ -165,9 +168,10 @@ body {
   font-weight: 700;
   color: transparent;
   letter-spacing: 2px;
-  transition: all 0.2s;
+  transition: all 0.2s ease-in-out;
   color: #1f363d;
 }
+
 @media (max-width: 56.25em) {
   .heading-secondary {
     font-size: 3rem;
@@ -198,6 +202,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 div > h3 {
@@ -206,4 +211,77 @@ div > h3 {
 
 .working-knowledge {
   border-left: 2px solid;
+  white-space: nowrap;
 }
+
+.about-me {
+  text-align: center;
+  background-color: #1f363d;
+}
+
+.heading-about {
+  position: relative;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: transparent;
+  letter-spacing: 2px;
+  padding-top: 40px;
+}
+@media (max-width: 56.25em) {
+  .heading-about {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .heading-about {
+    font-size: 2.5rem;
+  }
+}
+
+.heading-about::before {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  -webkit-text-stroke: 0vw #1f363d;
+  border-right: 2px solid white;
+  overflow: hidden;
+  animation: animate 4s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 28%;
+  }
+}
+
+.self-image {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+
+.about-me {
+  -webkit-clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 100%);
+}
+
+.about-me-container {
+  color:white;
+}
+
+.img-and-intro{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+
