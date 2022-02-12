@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c10194611f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -81,70 +83,99 @@
         </div>
     </section>
     <!-- project list -->
-    <section class="project-list">
-        <h2 class="heading-secondary proj-heading">
-            Projects
-        </h2>
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="overlay-image" style="background-image:url(./assets/battleship-game.png)">
+    <section class="project-list" id="projects">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                Project Portfolio
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-1">
+                        <div class="card__picture card__picture--1">
+                            &nbsp;
+                        </div>
+                        <!-- <h4 class="card__heading">
+                            <span class="card__heading-span--1">
+                                BattleShip
+                            </span>
+                        </h4> -->
+                        <div class="card__details">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="container">
-                        <h1>Battleship</h1>
-                        <p>A fully functional clone of the popular game Battleship, with functioning reactive AI. Built
-                            using pure HTML, CSS, & JavaScript.
-                            <br>
-                            <a href="https://github.com/skylor727/battleship" class="carousel-button"
-                                target="_blank"><img class="btn-image" src="./assets/icons8-github.svg"
-                                    alt="info-icon"></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="overlay-image" style="background-image:url(./assets/my-classes.png">
-                    </div>
-                    <div class="container">
-                        <h1>My Classes</h1>
-                        <p>A Full-Stack CRUD business application, built using the MEN stack. Includes OAuth
-                            functionality and
-                            role based authorizations.
-                            <br>
-                            <a href="https://github.com/skylor727/my-classes" class="carousel-button"
-                                target="_blank"><img class="btn-image" src="./assets/icons8-github.svg"
-                                    alt="info-icon"></a>
-                        </p>
+                    <div class="card__side card__side--back card__side--back-1">
+                        <div class="card__cta">
+                            <div class="card__box">
+                                <div class="card__description">
+                                    <p>
+                                        A fully functional clone of the popular game Battleship, with functioning
+                                        reactive AI. Built using pure
+                                        HTML, CSS, & JavaScript.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://github.com/skylor727/battleship">Deployed</a>
+                            <a target="_blank" href="https://github.com/skylor727/battleship"
+                                class="btn btn--white btn--github"><img src="/assets/icons8-github-24.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
-                <span class="sr-only"></span>
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="prev">
-                <span class="sr-only"></span>
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-        </div>
+            <div class="col-2-of-2">
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-2">
+                        <div class="card__picture card__picture--2">
+                            &nbsp;
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--2">
+                                    My Classes
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="card__details">
+                            <ul>
+                                <li>NodeJS</li>
+                                <li>ExpressJS</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-2">
+                        <div class="card__cta">
+                            <div class="card__box">
+                                <div class="card__description">
+                                    <p>
+                                        A Full-Stack CRUD business application, built using the MEN stack. Includes
+                                        OAuth functionality and
+                                        role based authorizations.
+                                    </p>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://github.com/skylor727/battleship">Deployed</a>
+                            <a target="_blank" href="https://github.com/skylor727/battleship"
+                                class="btn btn--white btn--github"><img src="/assets/icons8-github-24.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <footer class="site-footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="github" href="#"><i class="fa fa-github"></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                    <p class="copyright-text">Skylor Parker &copy; 2022.
-                </div>
-            </div>
-        </div>
+        <ul class="footer-icons-container">
+            <li class="social-icons"><a target="_blank"href="#">Resume&nbsp;&nbsp;<i class="fa fa-address-card"></i></a>
+            </li>
+            <li class="social-icons"><a target="_blank"href="https://www.linkedin.com/in/skylor-parker/">LinkedIn&nbsp;&nbsp;<i class="fa fa-linkedin"></i></a>
+            </li>
+            <li class="social-icons"><a target="_blank"href="https://github.com/skylor727">GitHub&nbsp;&nbsp;<i class="fa fa-github"></i></a></li>
+            <li class="social-icons"> <a target="_blank"href="mailto:skylor727@gmail.com">Email&nbsp;&nbsp;<i class="fa fa-envelope"></i></a></li>
+        </ul>
     </footer>
-
     <!-- contact info -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
