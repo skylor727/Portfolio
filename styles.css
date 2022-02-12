@@ -589,3 +589,8 @@ div > h3 {
   color: white;
   text-decoration-color: white;
 }
+
+
+.link-gh {
+  text-decoration: none;
+}
