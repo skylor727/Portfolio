@@ -388,10 +388,10 @@ div > h3 {
 }
 
 .card__picture--4 {
-  background-image: url(./assets/ticket.png);
+  background-image: url(./assets/tickets.png);
   background-size: cover;
   background-position: top;
-  background-position-y: -75px;
+
 }
 
 .card__heading {
@@ -433,12 +433,7 @@ div > h3 {
   transform: rotate(-5deg);
 }
 
-.card__heading-span--4 {
-  float: left;
-  color: black;
-  font-family: "Inconsolata", monospace;
-  transform: rotate(-5deg);
-}
+
 
 .card__details {
   padding: 1rem 3rem;
