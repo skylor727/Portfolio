@@ -342,6 +342,14 @@ div > h3 {
   background-color: #1f363d;
 }
 
+.card__side--back-3 {
+  background-color: #1f363d;
+}
+
+.card__side--back-4 {
+  background-color: #1f363d;
+}
+
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
 }
@@ -370,6 +378,20 @@ div > h3 {
   background-image: url(./assets/schoolheader2.jpg);
   background-size: cover;
   background-position: top;
+}
+
+.card__picture--3 {
+  background-image: url(./assets/68747470733a2f2f692e696d6775722e636f6d2f6741714445526d2e706e67.png);
+  background-size: cover;
+  background-position: top;
+  background-position-y: -135px;
+}
+
+.card__picture--4 {
+  background-image: url(./assets/ticket.png);
+  background-size: cover;
+  background-position: top;
+  background-position-y: -75px;
 }
 
 .card__heading {
@@ -402,6 +424,20 @@ div > h3 {
   font-family: "Gloria Hallelujah", cursive;
   transform: rotate(-5deg);
   text-decoration: underline;
+}
+
+.card__heading-span--3 {
+  float: left;
+  color: #f7f7f7;
+  font-family: "Inconsolata", monospace;
+  transform: rotate(-5deg);
+}
+
+.card__heading-span--4 {
+  float: left;
+  color: black;
+  font-family: "Inconsolata", monospace;
+  transform: rotate(-5deg);
 }
 
 .card__details {
@@ -538,6 +574,7 @@ div > h3 {
 .row .col-1-of-2 {
   width: calc((100% - 5rem) / 2);
 }
+
 .row .col-2-of-2 {
   width: calc((100% - 5rem) / 2);
 }
@@ -546,7 +583,6 @@ div > h3 {
 .site-footer {
   background-color: #1f363d;
   width: 100%;
-  padding-bottom: 0;
 }
 
 .footer-icons-container {
@@ -560,8 +596,8 @@ div > h3 {
   margin-bottom: 0;
   height: 50px;
   align-content: center;
+  border: none !important;
 }
-
 
 .social-icons {
   padding-left: 0;
@@ -592,7 +628,6 @@ div > h3 {
   color: white;
   text-decoration-color: white;
 }
-
 
 .link-gh {
   text-decoration: none;
