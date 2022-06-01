@@ -375,9 +375,10 @@ div > h3 {
 }
 
 .card__picture--2 {
-  background-image: url(./assets/schoolheader2.jpg);
+  background-image: url(./assets/travel.jpg);
   background-size: cover;
   background-position: top;
+  background-position-y: -100px;
 }
 
 .card__picture--3 {
