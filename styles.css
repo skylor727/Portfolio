@@ -382,10 +382,10 @@ div > h3 {
 }
 
 .card__picture--3 {
-  background-image: url(./assets/68747470733a2f2f692e696d6775722e636f6d2f6741714445526d2e706e67.png);
+  background-image: url(./assets/sleeptracker.png);
   background-size: cover;
   background-position: top;
-  background-position-y: -135px;
+  
 }
 
 .card__picture--4 {
