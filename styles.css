@@ -24,6 +24,26 @@ html {
     font-size: 75%;
   }
 }
+.floating-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #2b3f5a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.floating-button:hover {
+  background-color: #1f2e43;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -385,14 +405,12 @@ div > h3 {
   background-image: url(./assets/sleeptracker.png);
   background-size: cover;
   background-position: top;
-  
 }
 
 .card__picture--4 {
   background-image: url(./assets/tickets.png);
   background-size: cover;
   background-position: top;
-
 }
 
 .card__heading {
@@ -433,8 +451,6 @@ div > h3 {
   font-family: "Inconsolata", monospace;
   transform: rotate(-5deg);
 }
-
-
 
 .card__details {
   padding: 1rem 3rem;

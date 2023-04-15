@@ -71,23 +71,21 @@
         <h2 class="heading-secondary">Technologies</h2>
         <div class="stack-container">
           <div class="expertise">
-            
             <div class="card-content">
               <img class="icon" src="assets/javascript.svg" alt="js-icon" />
               <img class="icon" src="assets/nodejs-icon.svg" alt="node-icon" />
               <img class="icon" src="assets/express.svg" alt="express-icon" />
               <img
-              class="icon"
-              src="assets/postgresql.svg"
-              alt="postgres-icon"
+                class="icon"
+                src="assets/postgresql.svg"
+                alt="postgres-icon"
               />
               <img class="icon" src="assets/react.svg" alt="react-icon" />
               <img src="assets/java.svg" alt="java-icon" class="icon" />
-              <img src="assets/spring.svg" alt="spring">
+              <img src="assets/spring.svg" alt="spring" />
             </div>
           </div>
           <div class="working-knowledge">
-            
             <div class="card-content">
               <img
                 class="icon"
@@ -98,7 +96,6 @@
               <img class="icon" src="assets/css-3.svg" alt="css-icon" />
               <img class="icon" src="assets/mongodb.svg" alt="mongo-icon" />
               <img class="icon" src="assets/python.svg" alt="python-icon" />
-              
             </div>
           </div>
         </div>
@@ -255,7 +252,7 @@
                 <a target="_blank" href="https://skylor-p.com/sleep-tracker"
                   ><span class="link-effect"> Deployed Version</span></a
                 >
-                <br>
+                <br />
                 <a
                   class="link-gh"
                   target="_blank"
@@ -338,5 +335,16 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <button id="scrollToResume" class="floating-button">Resume</button>
+    <script>
+      document
+        .getElementById("scrollToResume")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          });
+        });
+    </script>
   </body>
 </html>
